@@ -2,15 +2,11 @@
 
 [ext_resource type="Script" uid="uid://c66yggx5x6dxu" path="res://scripts/dialogos.gd" id="1_7odyp"]
 [ext_resource type="Texture2D" uid="uid://cu1o6ls3f3j2t" path="res://assets/sprites/DIALOGO.png" id="1_idkqq"]
-[ext_resource type="Texture2D" uid="uid://cd05njf7pcwrx" path="res://assets/sprites/ESCOLHA.png" id="3_hnqmj"]
 
 [sub_resource type="Theme" id="Theme_idkqq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hnqmj"]
 texture = ExtResource("1_idkqq")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_63nlq"]
-texture = ExtResource("3_hnqmj")
 
 [node name="dialogo" type="CanvasLayer" unique_id=1534029281]
 
@@ -26,7 +22,6 @@ offset_top = -53.0
 offset_right = 125.0
 grow_horizontal = 2
 grow_vertical = 0
-size_flags_horizontal = 3
 size_flags_vertical = 10
 theme = SubResource("Theme_idkqq")
 theme_override_styles/panel = SubResource("StyleBoxTexture_hnqmj")
@@ -54,7 +49,6 @@ size_flags_vertical = 11
 
 [node name="Button" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=748664187]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_63nlq")
 
 [node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=266412929]
 layout_mode = 2
