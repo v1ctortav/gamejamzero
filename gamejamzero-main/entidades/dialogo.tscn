@@ -21,13 +21,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -135.0
-offset_top = -85.0
-offset_right = 115.0
-offset_bottom = -1.0
+offset_left = -125.0
+offset_top = -53.0
+offset_right = 125.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
+size_flags_vertical = 10
 theme = SubResource("Theme_idkqq")
 theme_override_styles/panel = SubResource("StyleBoxTexture_hnqmj")
 script = ExtResource("1_7odyp")
@@ -36,30 +36,30 @@ script = ExtResource("1_7odyp")
 layout_mode = 2
 size_flags_vertical = 8
 
-[node name="texto" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1643925823]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1643925823]
 layout_mode = 2
+size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="PanelContainer/VBoxContainer/texto" unique_id=1435966776]
-layout_mode = 2
-
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/texto" unique_id=690476804]
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=690476804]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 8
-fit_content = true
+scroll_active = false
+autowrap_mode = 2
+tab_size = 1
 vertical_alignment = 3
 
-[node name="escolhas" type="VBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1260767146]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1260767146]
 layout_mode = 2
+size_flags_vertical = 11
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/escolhas" unique_id=748664187]
+[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=748664187]
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxTexture_63nlq")
 
-[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/escolhas" unique_id=266412929]
+[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=266412929]
 layout_mode = 2
 
-[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer/escolhas" unique_id=910499087]
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=910499087]
 layout_mode = 2
 
 [node name="timer_dialogo" type="Timer" parent="PanelContainer" unique_id=1281179221]
