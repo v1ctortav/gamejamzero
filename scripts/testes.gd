@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var dialogo_ui = $dialogo/PanelContainer
+@onready var dialogo_ui = $dialogo
 @onready var jogador = $player
 
 var dialogos = {

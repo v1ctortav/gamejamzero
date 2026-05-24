@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://gamy1rsstxeh" path="res://assets/sprites/apartamento/Sprite-0013.png" id="2_xfu7s"]
 [ext_resource type="PackedScene" uid="uid://cjjc27kxdorjx" path="res://entidades/objetos_interativos/caixa.tscn" id="3_t1hvb"]
 [ext_resource type="PackedScene" uid="uid://d1oc65ipmlq8u" path="res://entidades/dialogo.tscn" id="4_0opdp"]
+[ext_resource type="Texture2D" uid="uid://c2mie58txpft" path="res://assets/sprites/apartamento/Sprite-0024.png" id="4_jxgwd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xfu7s"]
 size = Vector2(384, 72)
@@ -22,19 +23,49 @@ size = Vector2(168, 8)
 size = Vector2(152, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e82yn"]
-size = Vector2(136, 24)
+size = Vector2(119, 72)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_anfla"]
-size = Vector2(160, 24)
+size = Vector2(160, 72)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3s7vv"]
-size = Vector2(24, 24)
+size = Vector2(50, 72)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmdao"]
 size = Vector2(8, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6oea8"]
 size = Vector2(8, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjwkk"]
+size = Vector2(49, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qx5sc"]
+size = Vector2(28, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bicne"]
+size = Vector2(43, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2mhgt"]
+size = Vector2(9.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi17d"]
+size = Vector2(30, 49)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wv3ip"]
+size = Vector2(70, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c777r"]
+size = Vector2(26, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5u6g"]
+size = Vector2(72, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4spno"]
+size = Vector2(62, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_diau2"]
+size = Vector2(19, 14)
 
 [node name="apartamento" type="Node2D" unique_id=871281690]
 script = ExtResource("1_7kd1s")
@@ -71,16 +102,16 @@ position = Vector2(300, 460)
 shape = SubResource("RectangleShape2D_jxgwd")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="colisao_terreno" unique_id=2112045472]
-position = Vector2(236, 292)
+position = Vector2(227.5, 268)
 shape = SubResource("RectangleShape2D_e82yn")
 one_way_collision_margin = 0.0
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="colisao_terreno" unique_id=221690280]
-position = Vector2(88, 228)
+position = Vector2(88, 204)
 shape = SubResource("RectangleShape2D_anfla")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="colisao_terreno" unique_id=502124849]
-position = Vector2(364, 292)
+position = Vector2(351, 268)
 shape = SubResource("RectangleShape2D_3s7vv")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="colisao_terreno" unique_id=620535455]
@@ -91,6 +122,54 @@ shape = SubResource("RectangleShape2D_cmdao")
 position = Vector2(172, 220)
 shape = SubResource("RectangleShape2D_6oea8")
 
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="colisao_terreno" unique_id=1697192255]
+position = Vector2(32.5, 253)
+shape = SubResource("RectangleShape2D_cjwkk")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="colisao_terreno" unique_id=26611653]
+position = Vector2(154, 270)
+shape = SubResource("RectangleShape2D_qx5sc")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="colisao_terreno" unique_id=401595373]
+position = Vector2(264, 377)
+shape = SubResource("RectangleShape2D_bicne")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="colisao_terreno" unique_id=2137957998]
+position = Vector2(247, 350)
+shape = SubResource("RectangleShape2D_2mhgt")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="colisao_terreno" unique_id=2128950805]
+position = Vector2(358, 380.5)
+shape = SubResource("RectangleShape2D_mi17d")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="colisao_terreno" unique_id=1399880252]
+position = Vector2(79, 362)
+shape = SubResource("RectangleShape2D_wv3ip")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="colisao_terreno" unique_id=149213590]
+position = Vector2(80, 317)
+shape = SubResource("RectangleShape2D_c777r")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="colisao_terreno" unique_id=988395677]
+position = Vector2(232, 91)
+shape = SubResource("RectangleShape2D_c777r")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="colisao_terreno" unique_id=248517539]
+position = Vector2(80, 387)
+shape = SubResource("RectangleShape2D_c777r")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="colisao_terreno" unique_id=2006362366]
+position = Vector2(332, 90)
+shape = SubResource("RectangleShape2D_r5u6g")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="colisao_terreno" unique_id=118197571]
+position = Vector2(233, 76)
+shape = SubResource("RectangleShape2D_4spno")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="colisao_terreno" unique_id=286844673]
+position = Vector2(283, 83)
+shape = SubResource("RectangleShape2D_diau2")
+
 [node name="apartamento" type="Sprite2D" parent="." unique_id=948386217]
 y_sort_enabled = true
 position = Vector2(192, 232)
@@ -98,6 +177,7 @@ texture = ExtResource("2_xfu7s")
 region_rect = Rect2(0, 0, 384, 464)
 
 [node name="apartamento2" type="Sprite2D" parent="." unique_id=1852442981]
+visible = false
 z_index = 2
 position = Vector2(192, 188)
 scale = Vector2(1, 1.0000001)
@@ -107,12 +187,12 @@ region_rect = Rect2(0, 160, 384, 56)
 
 [node name="apartamento3" type="Sprite2D" parent="." unique_id=38525639]
 z_index = 2
-position = Vector2(276, 220)
-texture = ExtResource("2_xfu7s")
-region_enabled = true
+position = Vector2(192, 232)
+texture = ExtResource("4_jxgwd")
 region_rect = Rect2(168, 160, 216, 120)
 
 [node name="caixa" parent="." unique_id=704842711 instance=ExtResource("3_t1hvb")]
 position = Vector2(336, 128)
 
 [node name="dialogo" parent="." unique_id=1534029281 instance=ExtResource("4_0opdp")]
+visible = false

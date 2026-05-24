@@ -2,60 +2,78 @@
 
 [ext_resource type="Script" uid="uid://c66yggx5x6dxu" path="res://scripts/dialogos.gd" id="1_7odyp"]
 [ext_resource type="Texture2D" uid="uid://cu1o6ls3f3j2t" path="res://assets/sprites/DIALOGO.png" id="1_idkqq"]
+[ext_resource type="Texture2D" uid="uid://cd05njf7pcwrx" path="res://assets/sprites/ESCOLHA.png" id="3_hnqmj"]
 
-[sub_resource type="Theme" id="Theme_idkqq"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_63nlq"]
+texture = ExtResource("3_hnqmj")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hnqmj"]
-texture = ExtResource("1_idkqq")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3hefi"]
+texture = ExtResource("3_hnqmj")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1hrag"]
+texture = ExtResource("3_hnqmj")
 
 [node name="dialogo" type="CanvasLayer" unique_id=1534029281]
-
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=34464394]
-custom_minimum_size = Vector2(250, 0)
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -125.0
-offset_top = -53.0
-offset_right = 125.0
-grow_horizontal = 2
-grow_vertical = 0
-size_flags_vertical = 10
-theme = SubResource("Theme_idkqq")
-theme_override_styles/panel = SubResource("StyleBoxTexture_hnqmj")
 script = ExtResource("1_7odyp")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1722830528]
-layout_mode = 2
-size_flags_vertical = 8
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1722830528]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -112.0
+offset_right = 300.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 4
+alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1643925823]
+[node name="PanelContainer" type="TextureRect" parent="VBoxContainer" unique_id=1612680771]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
-size_flags_vertical = 3
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_idkqq")
+expand_mode = 3
+stretch_mode = 4
 
-[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer/HBoxContainer" unique_id=690476804]
-layout_mode = 2
-size_flags_horizontal = 3
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/PanelContainer" unique_id=690476804]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/normal_font_size = 8
 scroll_active = false
 autowrap_mode = 2
 tab_size = 1
 vertical_alignment = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/VBoxContainer" unique_id=1260767146]
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer" unique_id=1260767146]
 layout_mode = 2
-size_flags_vertical = 11
+size_flags_horizontal = 4
+size_flags_vertical = 8
+alignment = 1
 
-[node name="Button" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=748664187]
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer" unique_id=748664187]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_63nlq")
 
-[node name="Button2" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=266412929]
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer" unique_id=266412929]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_3hefi")
 
-[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer/VBoxContainer" unique_id=910499087]
+[node name="Button3" type="Button" parent="VBoxContainer/VBoxContainer" unique_id=910499087]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_1hrag")
 
-[node name="timer_dialogo" type="Timer" parent="PanelContainer" unique_id=1281179221]
+[node name="timer_dialogo" type="Timer" parent="." unique_id=1281179221]
 
-[connection signal="timeout" from="PanelContainer/timer_dialogo" to="PanelContainer" method="_on_timer_dialogo_timeout"]
+[connection signal="timeout" from="timer_dialogo" to="VBoxContainer/PanelContainer" method="_on_timer_dialogo_timeout"]
