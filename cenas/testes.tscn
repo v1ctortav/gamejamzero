@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bqcdd5guhtvya"]
 
+[ext_resource type="Script" uid="uid://dawucklmh21g2" path="res://scripts/testes.gd" id="1_7kd1s"]
 [ext_resource type="PackedScene" uid="uid://bnyw6heg0aar6" path="res://entidades/player/player.tscn" id="1_vmnp0"]
 [ext_resource type="Texture2D" uid="uid://gamy1rsstxeh" path="res://assets/sprites/apartamento/Sprite-0013.png" id="2_xfu7s"]
 [ext_resource type="PackedScene" uid="uid://cjjc27kxdorjx" path="res://entidades/objetos_interativos/caixa.tscn" id="3_t1hvb"]
@@ -36,6 +37,7 @@ size = Vector2(8, 16)
 size = Vector2(8, 120)
 
 [node name="apartamento" type="Node2D" unique_id=871281690]
+script = ExtResource("1_7kd1s")
 metadata/_edit_horizontal_guides_ = [464.0]
 metadata/_edit_vertical_guides_ = [384.0]
 
